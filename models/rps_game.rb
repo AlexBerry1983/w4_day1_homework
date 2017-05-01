@@ -15,7 +15,14 @@ class Game
       return "Paper Wins!"
     elsif @player1 == @player2
       return "No Winner ... go again"      
-    end  
+    elsif @player1 == "scissors" and @player2 == "rock"
+      return "Rock Wins!"
+    elsif @player1 == "paper" and @player2 == "scissors"
+      return "Scissors Win!"
+    elsif @player1 == "rock" and @player2 == "paper"
+      return "Paper Wins!"
+
+    end
   end
 
 
