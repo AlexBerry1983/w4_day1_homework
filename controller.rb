@@ -4,7 +4,7 @@ require('pry-byebug')
 require_relative('models/rps_game')
 
 get '/' do
-  erb(:welcome)
+  erb(:home)
 end
 
 get '/result/:player1/:player2' do
