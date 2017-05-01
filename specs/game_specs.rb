@@ -29,15 +29,15 @@ class TestGame < Minitest::Test
   end
 
   def test_result4
-    assert_equal("No Winner ... go again", @game4.result)
+    assert_equal("Unfortunately you've both selected the same thing! That's a perfect excuse to play again!", @game4.result)
   end
 
   def test_result5
-    assert_equal("No Winner ... go again", @game5.result)
+    assert_equal("Unfortunately you've both selected the same thing! That's a perfect excuse to play again!", @game5.result)
   end
 
   def test_result6
-    assert_equal("No Winner ... go again", @game6.result)
+    assert_equal("Unfortunately you've both selected the same thing! That's a perfect excuse to play again!", @game6.result)
   end
 
   def test_result7

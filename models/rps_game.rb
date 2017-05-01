@@ -21,7 +21,7 @@ class Game
     elsif @player1 == "rock" and @player2 == "paper"
       return "Player 2!"
     elsif @player1 == @player2
-      return "No Winner ... go again"      
+      return "Unfortunately you've both selected the same thing! That's a perfect excuse to play again!"      
     end
   end
 
