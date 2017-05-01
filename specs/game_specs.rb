@@ -17,15 +17,15 @@ class TestGame < Minitest::Test
   end
 
   def test_result
-    assert_equal("Rock Wins!", @game1.result)
+    assert_equal("Player 1!", @game1.result)
   end
 
   def test_result2
-    assert_equal("Scissors Win!", @game2.result)
+    assert_equal("Player 1!", @game2.result)
   end
 
   def test_result3
-    assert_equal("Paper Wins!", @game3.result)
+    assert_equal("Player 1!", @game3.result)
   end
 
   def test_result4
@@ -37,15 +37,19 @@ class TestGame < Minitest::Test
   end
 
   def test_result6
-    assert_equal("Rock Wins!", @game7.result)
+    assert_equal("No Winner ... go again", @game6.result)
   end
 
   def test_result7
-    assert_equal("Scissors Win!", @game8.result)
+    assert_equal("Player 2!", @game7.result)
   end
 
   def test_result8
-    assert_equal("Paper Wins!", @game9.result)
+    assert_equal("Player 2!", @game8.result)
+  end
+
+  def test_result9
+    assert_equal("Player 2!", @game9.result)
   end
 
 end

@@ -1,6 +1,7 @@
 class Game
 
-  
+  attr_reader :player1, :player2
+
   def initialize(player1, player2)
     @player1 = player1
     @player2 = player2
@@ -8,20 +9,19 @@ class Game
 
   def result
     if @player1 == "rock" and @player2 == "scissors"
-      return "Rock Wins!"
+      return "Player 1!"
     elsif @player1 == "scissors" and @player2 == "paper"
-      return "Scissors Win!"
+      return "Player 1!"
     elsif @player1 == "paper" and @player2 == "rock"
-      return "Paper Wins!"
+      return "Player 1!"
+    elsif @player1 == "scissors" and @player2 == "rock"
+      return "Player 2!"
+    elsif @player1 == "paper" and @player2 == "scissors"
+      return "Player 2!"
+    elsif @player1 == "rock" and @player2 == "paper"
+      return "Player 2!"
     elsif @player1 == @player2
       return "No Winner ... go again"      
-    elsif @player1 == "scissors" and @player2 == "rock"
-      return "Rock Wins!"
-    elsif @player1 == "paper" and @player2 == "scissors"
-      return "Scissors Win!"
-    elsif @player1 == "rock" and @player2 == "paper"
-      return "Paper Wins!"
-
     end
   end
 
